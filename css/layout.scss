@@ -1,0 +1,44 @@
+body {
+    background:$tan;
+}
+
+.section-wrapper {
+    background-size:cover;
+    background-position:center;
+    height:400px;
+    text-align:center;
+    padding:20px 40px;
+
+    @include respond-to('small') {
+        height:600px;
+    }
+
+    @include respond-to('medium') {
+        height:700px;
+    }
+}
+
+.intro-section {
+    @extend .section-wrapper;
+    background-image:url('../images/wedding-couple-sitting-on-green-grass-in-front-of-body-of-70737.jpg');
+    padding-top:150px;
+}
+
+.intro-spacer {
+    width:20px;
+    height:2px;
+    background:$white;
+    margin:0 auto;
+}
+
+.summary-section {
+    @extend .section-wrapper;
+}
+
+.summary-box {
+    position:relative;
+    background:$white;
+    margin:0 40px;
+    height:400px;
+    top:-200px;
+}

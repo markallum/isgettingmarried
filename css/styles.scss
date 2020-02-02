@@ -1,3 +1,4 @@
-body {
-    background:red;
-}
+@import './reset.scss';
+@import './core.scss';
+@import './layout.scss';
+@import './typography.scss';
